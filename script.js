@@ -406,11 +406,16 @@ const carouselPrev_employee = $('#employee-carousel .carousel-control-prev');
 const carouselNext_employee = $('#employee-carousel .carousel-control-next');
 console.log(carouselInner_employee,carouselPrev_employee,carouselNext_employee);
 // Filter employees who joined in the latest year
-const latestYear = new Date().getFullYear();
-let latest_newJOinees = data.filter(function (employee) {
-    const joining_year = new Date(employee.DOJ).getFullYear();
-    return joining_year === latestYear;
+const today_date = new Date();
+const latestYear_employee = today_date.getFullYear();
+const latestMonth_employee = today_date.getMonth() + 1; 
+const latest_newJOinees = data.filter(employee => {
+    const joinDate = new Date(employee.DOJ);
+    const joinYear = joinDate.getFullYear();
+    const joinMonth = joinDate.getMonth() + 1; 
+    return joinYear === latestYear_employee && joinMonth <= latestMonth_employee;
 });
+
 let currentIndexForEmployee = 0;
 const employeesPerSlide = 3;
 
