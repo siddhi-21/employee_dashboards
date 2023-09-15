@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Employee Dashboard</title>
+    <!-- bootsrap cdn link -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container mt-3" id="upper_section">
+      <div class="row">
+        <div class="col-md-6 birthDay_section">
+          <div class="classWithPad forResponsive_birthday">
+            <div class="mt-4">
+              <span class="font-weight-bold " style="font-weight:bold;font-size: 17px;">Birhtday</span>
+              <button id="last-week" class="mr-2">Last Week (0)</button>
+              <button id="this-week" class="mr-2">This Week (0)</button>
+              <button id="upcoming" class="">Upcoming (0)</button>
+            </div>
+
+            <div
+              id="birthday-carousel"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Birthday data will be displayed here -->
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#birthday-carousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                  ><</span
+                >
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#birthday-carousel"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                  >></span
+                >
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="classWithPad forresponsive_employee">
+            <div class="mt-4">
+              <span class="font-weight-bold newJOineeWord" style="font-weight:bold;">New Joinee</span>
+            </div>
+            <div
+              id="employee-carousel"
+              class="carousel slide mt-3"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Employee data will be displayed here -->
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#employee-carousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                  ><</span
+                >
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#employee-carousel"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                  >></span
+                >
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- table  -->
+    <div class="container" id="lower_section">
+      <div class="serachBar mb-4 mt-4">
+        <span class="font-weight-bolder d-inline-block pb-2 text-dark">Serach</span> <br>
+        <div class="row">
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="nameInput"
+              class="form-control"
+              placeholder=" Name"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="departmentInput"
+              class="form-control"
+              placeholder="Department"
+            />
+          </div>
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="idInput"
+              class="form-control"
+              placeholder="Employee ID"
+            />
+          </div>
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="designationInput"
+              class="form-control"
+              placeholder="Designation"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="tableContainer mb-3">
+        <table class="table table-striped text-center font-weight-bold text-secondary">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Full Name</th>
+              <th>Department</th>
+              <th>Email ID</th>
+              <th>Designation</th>
+              <th>Phone No</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Employee data will be populated here -->
+          </tbody>
+        </table>
+        <ul class="pagination" id="pagination"></ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

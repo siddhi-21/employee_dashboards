@@ -1,0 +1,693 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfcfcf;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.classWithPad {
+    margin: -6px;
+    border-radius: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* .birthDay_section {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} */
+
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.birthday-card {
+
+    height: 15.063rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ebebfa;
+}
+
+.birthdayImg {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 75%;
+
+}
+
+.designation {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #888585;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 80px;
+    width: 0%;
+    display: block !important;
+}
+
+control-prev-icon {
+    display: inline-block;
+
+}
+
+
+.carousel-control-next,
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #000;
+
+    font-size: 28px;
+
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+    margin-left: -6px;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+    margin-left: -18px;
+}
+
+#last-week,
+#this-week,
+#upcoming {
+    background-color: transparent;
+    color: rgb(28, 28, 28);
+    border: none;
+    padding: 6px 25px;
+    border-radius: 40px;
+    transition: all .3s ease;
+    outline: none;
+}
+
+#last-week:hover,
+#this-week:hover,
+#upcoming:hover,
+#this-weeks:hover {
+    background-color: #c914dfd1;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* new joinee section css */
+.newJoinee_section {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+.newJOineeWord {
+    font-size: 17px;
+}
+
+.employee-card {
+    height: 15.063rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ebebfa;
+}
+
+.employeeImg {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 75%;
+}
+
+
+
+
+/* table and serach css */
+.serachBar {
+    padding: 18px 17px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.tableContainer {
+    padding: 18px 17px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.employeeTableImg {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 33%;
+}
+
+#nameInput,
+#departmentInput,
+#idInput,
+#designationInput {
+    border: none;
+    background-color: #dfdfdf;
+    color: #495057;
+}
+
+.form-control:focus {
+    border-color: #4d4d4d0f;
+    box-shadow: 0 0 0 0.2rem rgba(60, 61, 61, 0.25);
+}
+
+.tableContainer th {
+    font-size: 1.063rem;
+    color: #5b5b5b;
+    text-shadow: 0px 0px 0px #1d1818de;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: all .3s ease;
+}
+
+.page-link:focus {
+    border-color: #4d4d4d0f;
+    box-shadow: 0 0 0 0.2rem rgba(60, 61, 61, 0.25);
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: #c914dfd1;
+}
+
+/* responsive css */
+@media (max-width: 1200px) {
+
+    .forResponsive_birthday {
+        margin-left: -6.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -6.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -6.625rem;
+        margin-right: -6.625rem;
+    }
+
+
+}
+
+@media (max-width: 1143px) {
+
+    .forResponsive_birthday {
+        margin-left: -4.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -4.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -4.625rem;
+        margin-right: -4.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1079px) {
+
+    .forResponsive_birthday {
+        margin-left: -2.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -2.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -2.625rem;
+        margin-right: -2.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 50%;
+    }
+}
+
+@media (max-width: 1015px) {
+
+    .forResponsive_birthday {
+        margin-left: -0.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -0.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .forResponsive_birthday {
+        margin-left: -7.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -7.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -7.625rem;
+        margin-right: -7.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 65%;
+    }
+
+    .birthday-card {
+        margin: -7px;
+    }
+
+    .employee-card {
+        margin: -7px;
+    }
+}
+
+@media (max-width: 934px) {
+
+    .forResponsive_birthday {
+        margin-left: -5.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -5.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -5.625rem;
+        margin-right: -5.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 86%;
+    }
+}
+
+@media (max-width: 874px) {
+
+    .forResponsive_birthday {
+        margin-left: -3.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -3.625rem;
+    }
+
+    .serachBar,
+    .tableContainer {
+        margin-left: -3.625rem;
+        margin-right: -3.625rem;
+    }
+
+    .employeeTableImg {
+
+        width: 125%;
+    }
+}
+
+@media (max-width: 809px) {
+
+    .forResponsive_birthday {
+        margin-left: -1.625rem;
+    }
+
+    .forresponsive_employee {
+        margin-right: -1.625rem;
+    }
+
+    .serachBar {
+        margin-left: -1.625rem;
+        margin-right: -1.625rem;
+    }
+
+    .tableContainer {
+
+        background: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        border-radius: 6px;
+
+    }
+
+    .employeeTableImg {
+
+        width: 100%;
+    }
+
+    .birthday-card {
+        margin: -7px;
+    }
+
+    .employee-card {
+        margin: -7px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .forResponsive_birthday {
+        margin-bottom: 3.188rem;
+
+    }
+
+    .forresponsive_employee {
+        margin-left: -1.813rem;
+    }
+
+    .serachBar {
+        margin-left: -7.625rem;
+        margin-right: -7.625rem;
+
+    }
+    .employeeTableImg {
+
+        width: 100%;
+    }
+    table {
+        font-size: 14px;
+        /* Reduce font size */
+    }
+
+    th,
+    td {
+        padding: 8px !important;
+        /* Add more padding */
+    }
+
+    .form-control {
+        width: 45%;
+    }
+
+    #nameInput {
+        float: left;
+    }
+
+    #departmentInput {
+        float: right;
+        margin-top: -41px;
+    }
+
+    #designationInput {
+        margin-top: -42px;
+    }
+
+    #idInput {
+        float: right;
+        margin-top: 17px;
+    }
+
+    .tableContainer {
+        margin-left: -7.625rem;
+        margin-right: -7.625rem;
+        background: #fff;
+        box-shadow: none !important;
+
+
+    }
+
+    .newJOineeWord {
+        font-size: 21px;
+        color: #464545;
+    }
+
+    .date {
+        font-size: 1.625rem;
+    }
+
+    #upcoming {
+        padding: 6px 22px;
+    }
+
+    .birthdayImg {
+        width: 22%;
+    }
+
+    .employeeImg {
+        width: 22%;
+    }
+
+    .birthday-card {
+        margin: 12px;
+    }
+
+    .employee-card {
+        margin: 12px;
+    }
+}
+
+@media (max-width: 754px)
+{
+    .serachBar {
+        margin-left: -5.625rem;
+        margin-right: -5.625rem;
+
+    }
+    .tableContainer {
+        margin-left: -6.625rem;
+        margin-right: -6.625rem;
+        background: #fff;
+        box-shadow: none !important;
+
+
+    }
+    table {
+        font-size: 14px; 
+    }
+    th, td {
+        padding: 8px; 
+    }
+}
+@media (max-width: 589px) {
+
+    .forResponsive_birthday {
+        margin-bottom: 3.188rem;
+        margin-left: -0.125rem;
+        margin-right: -0.313rem;
+    }
+
+
+    .forresponsive_employee {
+        margin-left: -0.125rem;
+        margin-right: -0.313rem;
+    }
+    .serachBar {
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+
+    }
+    .tableContainer {
+        margin-left: -1.625rem;
+        margin-right: -1.625rem;
+    
+        background: #fff;
+        box-shadow: none !important;
+    }
+        table {
+            font-size: 8px; 
+        }
+        .employeeTableImg {
+
+            width: 118%;
+        }
+    .date {
+        font-size: 1.625rem;
+    }
+
+    #upcoming {
+        padding: 6px 9px;
+    }
+
+    .birthdayImg {
+        width: 22%;
+    }
+
+    .employeeImg {
+        width: 22%;
+    }
+
+    .birthday-card {
+        margin: 12px;
+    }
+
+    .employee-card {
+        margin: 12px;
+    }
+}
+@media (max-width: 576px) {
+   
+    th, td {
+        padding: 6px !important; 
+    }
+    .serachBar {
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+
+    }
+    .tableContainer {
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+    
+        background: #fff;
+        box-shadow: none !important;
+    }
+        table {
+            font-size: 10px; 
+        }
+       .tableContainer th {
+            font-size: 13px;
+        }
+        .employeeTableImg {
+
+            width:122%;
+        }
+}
+
+@media (max-width: 530px) {
+    #upcoming {
+        padding: 6px 4px;
+    }
+    th, td {
+        padding: 6px !important; 
+    }
+    .serachBar {
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+
+    }
+    .tableContainer {
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+    
+        background: #fff;
+        box-shadow: none !important;
+    }
+        table {
+            font-size: 9px; 
+        }
+       .tableContainer th {
+            font-size: 10px;
+        }
+        .employeeTableImg {
+
+            width:113%;
+        }
+        .tableContainer td{
+            font-size: 10px;
+        }
+    
+}
+
+@media (max-width: 452px) {
+    #upcoming {
+        padding: 6px 22px;
+        margin-top: 7px;
+    }
+    th, td {
+        padding: 6px !important; 
+    }
+    .serachBar {
+        margin-left: -0.625rem;
+        margin-right: -2.625rem;
+    }
+   
+    .employeeTableImg {
+
+        width:  150%;
+    }
+    .tableContainer {
+        margin-left: -0.625rem;
+        margin-right: -2.625rem;
+    
+        background: #fff;
+        box-shadow: none !important;
+    }
+        table {
+            font-size: 9px ; 
+        }
+       .tableContainer th {
+            font-size: 10px;
+        }
+ 
+ 
+}
+
+@media (max-width: 414px){
+    .tableContainer {
+        margin-left: -0.625rem;
+        margin-right: -6.625rem;
+    
+    }
+    .serachBar {
+        margin-left: -0.625rem;
+        margin-right: -6rem;
+    }
+   
+}
+
+@media (max-width: 323px){
+    .tableContainer {
+        margin-left: -0.625rem;
+        margin-right: -11.625rem;
+    
+    }
+    .serachBar {
+        margin-left: -0.625rem;
+        margin-right: -11rem;
+    }
+   
+}
